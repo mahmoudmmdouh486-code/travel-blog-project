@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Travel Diary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Anchor for "back to top" link -->
+  <a id="top"></a>
+
+  <header>
+    <h1>My Travel Diary</h1>
+    <p class="tagline">Journeys, snapshots, and practical tips for curious travelers.</p>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- 3) Intro -->
+    <section id="home">
+      <h2>Welcome</h2>
+      <p class="intro">Welcome to <strong>My Travel Diary</strong> — a cozy corner where I document city strolls, hidden cafés, and train-window daydreams. You’ll find bite‑sized guides, beautiful photos, and honest notes on budgets and itineraries. <em>Pack light; wander far.</em></p>
+    </section>
+
+    <!-- 5) Destination sections -->
+    <section id="destinations">
+      <h2>Destinations</h2>
+      <div class="grid">
+        <article class="destination">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1400&auto=format&fit=crop" alt="View of Paris with the Eiffel Tower at sunset" width="640" height="420" />
+            <figcaption>Golden hour in <strong>Paris</strong>.</figcaption>
+          </figure>
+          <h3>Paris</h3>
+          <p>Stroll along the Seine, browse vintage bookstalls, and savor a flaky croissant in the shadow of <strong>Notre‑Dame</strong>.</p>
+          <ul>
+            <li>Buy a carnet of metro tickets to save time.</li>
+            <li>Visit the Louvre on a weekday morning.</li>
+            <li>Pack a picnic for sunset at the Trocadéro.</li>
+          </ul>
+          <div class="more-details" style="display:none">
+            <p><strong>Extra Paris Tips:</strong></p>
+            <ul>
+              <li>Try a river cruise at sunset for unique city views.</li>
+              <li>Explore Montmartre’s art scene and street performers.</li>
+              <li>Sample local cheeses at a fromagerie.</li>
+            </ul>
+          </div>
+          <p><button class="btn read-more-btn" type="button">Read More</button></p>
+        </article>
+
+        <article class="destination">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1554797589-7241bb691973?q=80&w=1400&auto=format&fit=crop" alt="Tokyo skyline with Tokyo Tower at dusk" width="640" height="420" />
+            <figcaption>Neon nights in <strong>Tokyo</strong>.</figcaption>
+          </figure>
+          <h3>Tokyo</h3>
+          <p>Sip matcha in quiet gardens, then dive into the electric buzz of <strong>Shibuya</strong> and <strong>Akihabara</strong>.</p>
+          <ul>
+            <li>Get a Suica/PASMO card for easy transit.</li>
+            <li>Try an omakase lunch for better value.</li>
+            <li>Visit shrines early to avoid crowds.</li>
+          </ul>
+          <div class="more-details" style="display:none">
+            <p><strong>Extra Tokyo Tips:</strong></p>
+            <ul>
+              <li>Visit Tsukiji Outer Market for fresh sushi breakfast.</li>
+              <li>Relax in an onsen (hot spring bath) for a local experience.</li>
+              <li>Shop for unique souvenirs in Harajuku.</li>
+            </ul>
+          </div>
+          <p><button class="btn read-more-btn" type="button">Read More</button></p>
+        </article>
+      </div>
+
+      <!-- 8) Cost comparison table -->
+      <section aria-labelledby="costs-title" style="margin-top:1rem;">
+        <h3 id="costs-title">Cost Comparison</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>City</th>
+              <th>Avg. Hotel (per night)</th>
+              <th>Local Transport (per day)</th>
+              <th>Meal (mid‑range)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paris</td>
+              <td>$160</td>
+              <td>$8</td>
+              <td>$25</td>
+            </tr>
+            <tr>
+              <td>Tokyo</td>
+              <td>$120</td>
+              <td>$6</td>
+              <td>$15</td>
+            </tr>
+            <tr>
+              <td>Lisbon</td>
+              <td>$95</td>
+              <td>$5</td>
+              <td>$12</td>
+            </tr>
+          </tbody>
+        </table>
+        <blockquote>
+          “The world is a book, and those who do not travel read only one page.” — <em>St. Augustine</em>
+        </blockquote>
+      </section>
+    </section>
+
+    <!-- 13) Ordered list of Top Tips -->
+    <section id="tips">
+      <h2>Top 5 Travel Tips</h2>
+      <ol>
+        <li>Pack layers and a compact rain jacket.</li>
+        <li>Make digital + paper copies of documents.</li>
+        <li>Keep a small first‑aid kit handy.</li>
+        <li>Learn hello/thank you in the local language.</li>
+        <li>Leave space in your schedule for serendipity.</li>
+      </ol>
+      <p class="muted" style="margin-top:.5rem;">Note: Prices and availability change—always double‑check before booking.</p>
+    </section>
+
+    <!-- 10/15) Contact + Subscribe -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Have a question or want to suggest a destination? Drop a note and <em>subscribe</em> for updates!</p>
+  <form id="subscribe" action="subscribe.php" method="post">
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        <button type="submit">Subscribe to Newsletter</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- 15) Footer with back to top link -->
+  <footer>
+    <p>© <span id="year"></span> My Travel Diary · <a href="#top">Back to top ↑</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
